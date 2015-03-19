@@ -1,0 +1,2 @@
+# fluxbox configs
+fluxbox configuration
