@@ -1,0 +1,92 @@
+[begin] (FluxBox)
+	[submenu] (Development)
+		[exec] (Geany) {geany}
+		[exec] (Python) {lxterminal -e python}
+		[exec] (Qt4 Assistant) {assistant-qt4}
+		[exec] (Qt4 Designer) {designer-qt4}
+		[exec] (Qt4 Linguist) {linguist-qt4}
+		[exec] (Qt4 QDbusViewer) {qdbusviewer-qt4}
+	[end]
+	[submenu] (Editors)
+		[exec] (AA Fire) {lxterminal -e aafire -driver slang}
+		[exec] (Leafpad) {leafpad}
+		[exec] (Nano) {lxterminal -e nano}
+		[exec] (Vi) {lxterminal -e vi}
+	[end]
+	[submenu] (Graphics)
+		[exec] (GNU Image Manipulation Program) {gimp}
+		[exec] (Viewnior) {viewnior}
+	[end]
+	[submenu] (Multimedia)
+		[exec] (ALSA mixer) {lxterminal -e alsamixer}
+		[exec] (GNOME ALSA Mixer) {gnome-alsamixer}
+		[exec] (Music Player) {lxmusic}
+		[exec] (VLC media player) {vlc}
+	[end]
+	[submenu] (Network)
+		[exec] (Avahi SSH Server Browser) {bssh}
+		[exec] (Avahi VNC Server Browser) {bvnc}
+		[exec] (FireFox) {firefox}
+		[exec] (FTP) {lxterminal -e ftp}
+		[exec] (Irssi) {lxterminal -e irssi}
+		[exec] (Mail Reader) {exo-open --launch MailReader}
+		[exec] (Telnet) {lxterminal -e telnet}
+		[exec] (Web Browser) {exo-open --launch WebBrowser}
+	[end]
+	[submenu] (Office)
+		[exec] (AbiWord) {abiword}
+		[exec] (Claws Mail) {claws-mail}
+		[exec] (Document Viewer) {evince}
+		[exec] (Gnumeric) {gnumeric}
+	[end]
+	[submenu] (Other)
+		[exec] (compton) {compton}
+		[exec] (Galculator) {galculator}
+		[exec] (Qt V4L2 test Utility) {qv4l2}
+		[exec] (System Profiler and Benchmark) {hardinfo}
+	[end]
+	[submenu] (Shells)
+		[exec] (LXTerminal) {lxterminal}
+		[exec] (Root Terminal) {gksu -l gnome-terminal}
+		[exec] (Thunar File Manager) {thunar}
+		[exec] (UXTerm) {uxterm}
+		[exec] (Xterm) {xterm}
+	[end]
+	[submenu] (System)
+		[submenu] (Settings)
+			[submenu] (GNOME)
+				[exec] (Adobe Flash Player) {flash-player-properties}
+				[exec] (Firewall Configuration) {gufw}
+				[exec] (Network Connections) {nm-connection-editor}
+				[exec] (Privilege granting) {gksu-properties}
+			[end]
+			[exec] (Customize Look and Feel) {lxappearance}
+			[exec] (File Manager) {thunar-settings}
+			[exec] (Keyboard and Mouse) {lxinput}
+			[exec] (Manage Printing) {xdg-open http://localhost:631/}
+			[exec] (Manjaro Settings Manager) {manjaro-settings-manager}
+			[exec] (Monitor Settings) {lxrandr}
+			[exec] (Notifications) {xfce4-notifyd-config}
+			[exec] (Preferred Applications) {exo-preferred-applications}
+			[exec] (Print Settings) {system-config-printer}
+			[exec] (Removable Drives and Media) {thunar-volman-settings}
+		[end]
+		[exec] (Add/Remove Software) {pamac-manager}
+		[exec] (Bulk Rename) {/usr/lib/Thunar/ThunarBulkRename}
+		[exec] (dconf Editor) {dconf-editor}
+		[exec] (GParted) {gparted_polkit}
+		[exec] (Htop) {lxterminal -e htop}
+		[exec] (pstree) {lxterminal -e pstree.x11}
+		[exec] (Software Update) {pamac-updater}
+	[end]
+	[submenu] (Utilities)
+		[exec] (Archive Manager) {file-roller}
+		[exec] (Catfish File Search) {catfish}
+		[exec] (File Manager) {exo-open --launch FileManager}
+		[exec] (Info) {lxterminal -e info}
+		[exec] (Screenshot) {gnome-screenshot --interactive}
+		[exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+		[exec] (Xsetroot) {xsetroot}
+	[end]
+	[separator]
+[end]

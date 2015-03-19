@@ -1,0 +1,36 @@
+# Menú conformado por edición manual y complementado con
+# menumaker por K|Ke para Manjaro Fluxbox
+
+[begin] (Manjaro FX)
+[encoding] {UTF-8}
+  [exec] (File Manager) {Thunar} 
+  [exec] (Terminal) {lxterminal} 
+  [exec] (Web Browser) {firefox} 
+  [exec] (Mail Reader) {claws-mail} 
+  [exec] (Nitrogen) {nitrogen} 
+[separator]
+[include] (~/.fluxbox/usermenu)
+[submenu] (Fluxbox menu) 
+[config] (Configure)
+[submenu] (System Styles) {Choose a style...}
+  [stylesdir] (/usr/share/fluxbox/styles)
+[end]
+[submenu] (User Styles) {Choose a style...}
+  [stylesdir] (~/.fluxbox/styles)
+[end]
+[workspaces] (Workspace List)
+[submenu] (Tools)
+  [exec] (Screenshot - JPG) {import screenshot.jpg && display -resize 50% screenshot.jpg}
+  [exec] (Screenshot - PNG) {import screenshot.png && display -resize 50% screenshot.png}
+  [exec] (Run) {fbrun}
+  [exec] (Regen Menu) {mmaker -f fluxbox -c > ~/.fluxbox/usermenu}
+[end]
+[commanddialog] (Fluxbox Command)
+  [reconfig] (Reload config)
+  [restart] (Restart)
+  [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | gxmessage -file - -title "Manjaro Fluxbox" -center}   
+[end]
+[separator]
+  [exec] (Exit) {oblogout} 
+[endencoding]
+[end]
