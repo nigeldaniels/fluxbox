@@ -1,15 +1,12 @@
 # Menú conformado por edición manual y complementado con
 # menumaker por K|Ke para Manjaro Fluxbox
 
-[begin] (Manjaro FX)
+[begin] (Fluxbox_4_life)
 [encoding] {UTF-8}
-  [exec] (File Manager) {Thunar} 
   [exec] (Terminal) {lxterminal} 
-  [exec] (Web Browser) {firefox} 
-  [exec] (Mail Reader) {claws-mail} 
-  [exec] (Nitrogen) {nitrogen} 
-[separator]
-[include] (~/.fluxbox/usermenu)
+  [exec] (chromium) {chromium} 
+  [exec] (songza)   {chromium --app=http://songza.com}
+  [exec] (hipchat) {hipchat} 
 [submenu] (Fluxbox menu) 
 [config] (Configure)
 [submenu] (System Styles) {Choose a style...}
