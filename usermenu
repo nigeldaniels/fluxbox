@@ -1,24 +1,38 @@
 [begin] (FluxBox)
 	[submenu] (Development)
 		[exec] (Geany) {geany}
-		[exec] (Python) {lxterminal -e python}
+		[exec] (IDLE) {idle}
+		[exec] (ipython) {xterm -e ipython}
+		[exec] (IPython Qt console) {ipython qtconsole}
+		[exec] (Python) {xterm -e python}
 		[exec] (Qt4 Assistant) {assistant-qt4}
 		[exec] (Qt4 Designer) {designer-qt4}
 		[exec] (Qt4 Linguist) {linguist-qt4}
 		[exec] (Qt4 QDbusViewer) {qdbusviewer-qt4}
 	[end]
 	[submenu] (Editors)
-		[exec] (AA Fire) {lxterminal -e aafire -driver slang}
+		[exec] (AA Fire) {xterm -e aafire -driver slang}
 		[exec] (Leafpad) {leafpad}
-		[exec] (Nano) {lxterminal -e nano}
-		[exec] (Vi) {lxterminal -e vi}
+		[exec] (Nano) {xterm -e nano}
+		[exec] (Vi) {xterm -e vi}
+		[exec] (Vim) {xterm -e vim}
+	[end]
+	[submenu] (Games)
+		[submenu] (Adventure)
+			[exec] (Sclient) {sclient}
+		[end]
+		[submenu] (Arcade)
+			[exec] (PacMan) {pacman}
+		[end]
 	[end]
 	[submenu] (Graphics)
-		[exec] (GNU Image Manipulation Program) {gimp}
+		[exec] (GNU Image Manipulation Program) {gimp-2.8}
+		[exec] (The GIMP) {gimp}
 		[exec] (Viewnior) {viewnior}
+		[exec] (XGlyph) {xglyph}
 	[end]
 	[submenu] (Multimedia)
-		[exec] (ALSA mixer) {lxterminal -e alsamixer}
+		[exec] (ALSA mixer) {xterm -e alsamixer}
 		[exec] (GNOME ALSA Mixer) {gnome-alsamixer}
 		[exec] (Music Player) {lxmusic}
 		[exec] (VLC media player) {vlc}
@@ -26,11 +40,19 @@
 	[submenu] (Network)
 		[exec] (Avahi SSH Server Browser) {bssh}
 		[exec] (Avahi VNC Server Browser) {bvnc}
+		[exec] (Chromium) {chromium}
 		[exec] (FireFox) {firefox}
-		[exec] (FTP) {lxterminal -e ftp}
-		[exec] (Irssi) {lxterminal -e irssi}
+		[exec] (FTP) {xterm -e ftp}
+		[exec] (GQRX SDR) {gqrx}
+		[exec] (HipChat) {hipchat}
+		[exec] (Irssi) {xterm -e irssi}
+		[exec] (KTorrent) {ktorrent}
+		[exec] (Mail) {xterm -e mail}
 		[exec] (Mail Reader) {exo-open --launch MailReader}
-		[exec] (Telnet) {lxterminal -e telnet}
+		[exec] (Pidgin Internet Messenger) {pidgin}
+		[exec] (Talk) {xterm -e talk}
+		[exec] (Telnet) {xterm -e telnet}
+		[exec] (TkVNC) {xterm -e tkvnc}
 		[exec] (Web Browser) {exo-open --launch WebBrowser}
 	[end]
 	[submenu] (Office)
@@ -40,13 +62,23 @@
 		[exec] (Gnumeric) {gnumeric}
 	[end]
 	[submenu] (Other)
+		[exec] (CMake) {cmake-gui}
 		[exec] (compton) {compton}
 		[exec] (Galculator) {galculator}
+		[exec] (GRC) {gnuradio-companion}
+		[exec] (Gxmessage) {gxmessage}
+		[exec] (Help) {khelpcenter}
 		[exec] (Qt V4L2 test Utility) {qv4l2}
 		[exec] (System Profiler and Benchmark) {hardinfo}
 	[end]
+	[submenu] (Science)
+		[exec] (bc) {xterm -e bc}
+		[exec] (dc) {xterm -e dc}
+	[end]
 	[submenu] (Shells)
+		[exec] (GIT) {xterm -e git}
 		[exec] (LXTerminal) {lxterminal}
+		[exec] (Oracle VM VirtualBox) {VirtualBox}
 		[exec] (Root Terminal) {gksu -l gnome-terminal}
 		[exec] (Thunar File Manager) {thunar}
 		[exec] (UXTerm) {uxterm}
@@ -72,21 +104,39 @@
 			[exec] (Removable Drives and Media) {thunar-volman-settings}
 		[end]
 		[exec] (Add/Remove Software) {pamac-manager}
+		[exec] (Avahi Zeroconf Browser) {avahi-discover}
 		[exec] (Bulk Rename) {/usr/lib/Thunar/ThunarBulkRename}
 		[exec] (dconf Editor) {dconf-editor}
+		[exec] (GDM Setup) {gksu gdmsetup}
 		[exec] (GParted) {gparted_polkit}
-		[exec] (Htop) {lxterminal -e htop}
-		[exec] (pstree) {lxterminal -e pstree.x11}
+		[exec] (Htop) {xterm -e htop}
+		[exec] (pstree) {xterm -e pstree.x11}
+		[exec] (pstree) {xterm -e pstree}
+		[exec] (pstree) {xterm -e /usr/bin/pstree.x11}
 		[exec] (Software Update) {pamac-updater}
+		[exec] (Top) {xterm -e top}
 	[end]
 	[submenu] (Utilities)
+		[exec] (7-Zip FM) {7zFM}
+		[exec] (About Xfce) {xfce4-about}
 		[exec] (Archive Manager) {file-roller}
 		[exec] (Catfish File Search) {catfish}
 		[exec] (File Manager) {exo-open --launch FileManager}
-		[exec] (Info) {lxterminal -e info}
+		[exec] (HP Device Manager) {hp-toolbox}
+		[exec] (Info) {xterm -e info}
 		[exec] (Screenshot) {gnome-screenshot --interactive}
 		[exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+		[exec] (Xev) {xterm -e xev}
+		[exec] (Xrefresh) {xrefresh}
 		[exec] (Xsetroot) {xsetroot}
 	[end]
 	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+		[separator]
+		[exit] (Exit)
+	[end]
 [end]

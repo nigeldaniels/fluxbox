@@ -1,12 +1,13 @@
-# Menú conformado por edición manual y complementado con
-# menumaker por K|Ke para Manjaro Fluxbox
 
 [begin] (Fluxbox_4_life)
 [encoding] {UTF-8}
   [exec] (Terminal) {lxterminal} 
   [exec] (chromium) {chromium} 
   [exec] (songza)   {chromium --app=http://songza.com}
+  [exec] (docs)     {chromium --app=http://docs.google.com} 
   [exec] (hipchat) {hipchat} 
+  [exec] (rubymine) {/home/nigel/RubyMine-7.1/bin/./rubymine.sh}
+  [exec] (pycharm)  {/home/nigel/pycharm-4.0.6/bin/./pycharm.sh}
 [submenu] (Fluxbox menu) 
 [config] (Configure)
 [submenu] (System Styles) {Choose a style...}
