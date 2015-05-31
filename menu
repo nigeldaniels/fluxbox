@@ -8,6 +8,7 @@
   [exec] (hipchat) {hipchat} 
   [exec] (rubymine) {/home/nigel/RubyMine-7.1/bin/./rubymine.sh}
   [exec] (pycharm)  {/home/nigel/pycharm-4.0.6/bin/./pycharm.sh}
+  [exec] (android)  {/home/nigel/android-studio/bin/./studio.sh}
   [exec] (xchat)    {xchat}
 [submenu] (Fluxbox menu) 
 [config] (Configure)
