@@ -2,12 +2,13 @@
 [begin] (Fluxbox_4_life)
 [encoding] {UTF-8}
   [exec] (Terminal) {lxterminal} 
-  [exec] (chromium) {chromium} 
+  [exec] (firefox)  {firefox} 
   [exec] (songza)   {chromium --app=http://songza.com}
   [exec] (docs)     {chromium --app=http://docs.google.com} 
+  [exec] (slack)    {chromium --app=https://accuvit.slack.com/} 
   [exec] (hipchat) {hipchat} 
   [exec] (rubymine) {/home/nigel/RubyMine-7.1/bin/./rubymine.sh}
-  [exec] (pycharm)  {/home/nigel/pycharm-4.0.6/bin/./pycharm.sh}
+  [exec] (pycharm)  {/home/nigel/Downloads/pycharm-4.5.2/bin/./pycharm.sh}
   [exec] (android)  {/home/nigel/android-studio/bin/./studio.sh}
   [exec] (xchat)    {xchat}
 [submenu] (Fluxbox menu) 
