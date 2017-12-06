@@ -2,16 +2,23 @@
 [begin] (Fluxbox_4_life)
 [encoding] {UTF-8}
   [exec] (Terminal) {lxterminal} 
-  [exec] (firefox)  {firefox} 
-  [exec] (songza)   {chromium --app=http://songza.com}
+  [exec] (todo)     {chromium --app=http://any.do}
+  [exec] (chromium) {chromium} 
+  [exec] (vivaldi)  {vivaldi-stable}
   [exec] (docs)     {chromium --app=http://docs.google.com} 
-  [exec] (slack)    {chromium --app=https://accuvit.slack.com/} 
+  [exec] (slack)    {slack} 
+  [exec] (noise)    {chromium --app=https://coffitvity.com/}
   [exec] (hipchat) {hipchat} 
-  [exec] (rubymine) {/home/nigel/RubyMine-7.1/bin/./rubymine.sh}
-  [exec] (pycharm)  {/home/nigel/Downloads/pycharm-4.5.2/bin/./pycharm.sh}
+  [exec] (pycharm)  {/home/nigel/Downloads/pycharm-2016.2.3/bin/./pycharm.sh}
   [exec] (android)  {/home/nigel/android-studio/bin/./studio.sh}
   [exec] (xchat)    {xchat}
-[submenu] (Fluxbox menu) 
+  [exec] (nosli)    {chromium --app=https://www.noisli.com}    
+[submenu] (brightness)
+  [exec]  (100%) {xbacklight -set 100}
+  [exec]  (75%)  {xbacklight -set 75}
+  [exec]  (50)   {xbacklight -set 50}
+  [exec]  (25)   {xbacklight -set 25}
+[submenu] (Fluxbox menu)
 [config] (Configure)
 [submenu] (System Styles) {Choose a style...}
   [stylesdir] (/usr/share/fluxbox/styles)

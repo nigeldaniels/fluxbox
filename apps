@@ -11,3 +11,12 @@
 [app] (name=gimp) (class=Gimp) (role=gimp-dock)
   [Position]	(UPPERLEFT)	{87% 0%}
 [end]
+[app] (name=xterm) (class=XTerm)
+  [Sticky]	{no}
+  [Layer]	{8}
+  [Alpha]	{255}
+[end]
+[app] (name=sun-awt-X11-XFramePeer) (class=jetbrains-pycharm)
+  [Workspace]	{1}
+  [Layer]	{12}
+[end]

@@ -19,6 +19,10 @@
 # Because it is the last app you have to run it with ''exec'' before it.
 pulseaudio &
 nm-applet &
+pidgin & 
+slack & 
+wmname LG3D && PYCHARM_JDK=/usr/lib/jvm/java-6-openjdk-amd64 /home/nigel/Downloads/pycharm-2016.2.3/bin/pycharm.sh &
 exec fluxbox
 # or if you want to keep a log:
+
 # exec fluxbox -log "/home/enrique/.fluxbox/log"
